@@ -5,7 +5,7 @@ A free agent skill (SKILL.md format) for a quick, hands-on SEO and AI SEO check:
 There are no scripts and no API keys. Your agent helps you write a short set of real buyer questions, you ask them yourself in ChatGPT (with search on) and Perplexity a few times each and note who gets cited, and then the agent goes through an on-site checklist with you. It doesn't hand you a made-up score or promise traffic. It tells you what you saw and what to look at.
 
 ## Install
-Copy the `ai-citation-check` folder (the one with `SKILL.md` directly inside) into your agent's skills folder. The folder name has to match the `name` in SKILL.md.
+This repo is the skill folder (`SKILL.md` sits at the top), so clone or copy it into your agent's skills folder as `ai-citation-check`. The folder name has to match the `name` in SKILL.md.
 
 - Claude Code: `~/.claude/skills/` (or `.claude/skills/` in one project)
 - Cursor: `~/.cursor/skills/` (or `.cursor/skills/` in one project)
@@ -13,9 +13,8 @@ Copy the `ai-citation-check` folder (the one with `SKILL.md` directly inside) in
 
 For example:
 ```bash
-git clone https://github.com/mausoftskills/ai-citation-check
 mkdir -p ~/.claude/skills
-cp -r ai-citation-check/ai-citation-check ~/.claude/skills/
+git clone https://github.com/mausoftskills/ai-citation-check ~/.claude/skills/ai-citation-check
 ```
 
 Then ask your agent something like:
